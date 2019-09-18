@@ -1,0 +1,22 @@
+{
+  "name": "winston-loggly-bulk-typings",
+  "version": "1.0.0",
+  "description": "TS typings for winston-loggly-bulk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themyth92/winston-loggly-bulk-typings.git"
+  },
+  "author": "themyth92",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/themyth92/winston-loggly-bulk-typings/issues"
+  },
+  "homepage": "https://github.com/themyth92/winston-loggly-bulk-typings#readme",
+  "devDependencies": {
+    "winston": "^3.2.1"
+  }
+}
