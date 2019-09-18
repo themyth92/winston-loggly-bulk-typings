@@ -1,5 +1,5 @@
 {
-  "name": "winston-loggly-bulk-typings",
+  "name": "@ts-typings/winston-loggly-bulk",
   "version": "1.0.0",
   "description": "TS typings for winston-loggly-bulk",
   "main": "index.js",
