@@ -1,16 +1,17 @@
-declare module 'winston-loggly-bulks' {
+declare module 'winston-loggly-bulk' {
 import * as winston from 'winston';
 import * as Transport from 'winston-transport';
 
-    interface LogglyTransportOptions {
-    level: string,
-    subdomain: string,
+  interface LogglyTransportOptions {
+    token?: string,
+    level?: string,
+    subdomain?: string,
     auth?: {
       username: string,
       password: string,
     },
-    inputName: string,
-    inputToken: string,
+    inputName?: string,
+    inputToken?: string,
     json?: boolean,
     tags?: string[],
     isBulk?: boolean,
@@ -20,11 +21,12 @@ import * as Transport from 'winston-transport';
       retriesInMilliSeconds?: number
     },
     timestamp?: boolean,
-    networkErrorsOnConsole: boolean,
+    networkErrorsOnConsole?: boolean,
   }
 
   interface LogglyTransportInstance extends Transport {
-    new(options?: LogglyTransportOptions): LogglyTransportOptions
+    new(options?: LogglyTransportOptions): LogglyTransportInstance
   }
-  const Loggly: LogglyTransportOptions & { flushLogsAndExit: () => void };
+  const Loggly: LogglyTransportInstance;
+  const flushLogsAndExit: () => void;
 }
